@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+" http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="fajki.model.Dostawa" table="DOSTAWA" lazy="true" dynamic-update="true" select-before-update="true">
+	<id name="idDostawy" column="IDDOSTAWY" type="java.lang.Long"></id>
+	
+<!-- 	private Long idDostawy; -->
+<!-- 	private String nrPrzesylki; -->
+<!-- 	private Date dataNadania; -->
+<!-- 	private Long idDostawcy; -->
+<!-- 	private Boolean hurtowa; -->
+<!-- 	private Boolean doreczona; -->
+<!-- 	private Boolean zwrocona; -->
+	
+	<property name="nrPrzesylki" column="NRPRZESYLKI" type="java.lang.String"></property>
+	<property name="dataNadania" column="DATANADANIA" type="java.util.Date"></property>
+	<property name="idDostawcy" column="IDDOSTAWCY" type="java.util.Long"></property>
+	<property name="hurtowa" column="HURTOWA" type="java.util.Boolean"></property>
+	<property name="doreczona" column="DORECZONA" type="java.util.Boolean"></property>
+	<property name="zwrocona" column="ZWROCONA" type="java.util.Boolean"></property>
+
+<!-- 	<property name="price" column="PRICE" type="java.lang.Float" not-null="false"></property> -->
+<!-- 	<property name="launchDate" column="LAUNCHDATE" type="java.util.Date"></property> -->
+
+</class>
+</hibernate-mapping>

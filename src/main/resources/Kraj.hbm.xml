@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+" http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="fajki.model.Kraj" table="KRAJ" lazy="true" dynamic-update="true" select-before-update="true">
+	<id name="idKraju" column="IDKRAJU" type="java.lang.String"></id>
+
+	<property name="nazwa" column="NAZWA" type="java.lang.String"></property>
+
+</class>
+</hibernate-mapping>

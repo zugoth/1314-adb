@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+" http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="fajki.model.Zamowienie" table="ZAMOWIENIE" lazy="true" dynamic-update="true" select-before-update="true">
+	<id name="idZamowienia" column="IDZAMOWIENIA" type="java.lang.Long"></id>
+	
+	<property name="dataZlozenia" column="DATAZLOZENIA" type="java.util.Date"></property>
+	<property name="idKlienta" column="IDKLIENTA" type="java.util.Long"></property>
+	<property name="idDostawy" column="IDDOSTAWY" type="java.util.Long"></property>
+
+</class>
+</hibernate-mapping>

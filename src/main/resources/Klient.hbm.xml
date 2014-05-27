@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+" http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="fajki.model.idKlienta" table="IDKLIENTA" lazy="true" dynamic-update="true" select-before-update="true">
+	<id name="idFirmy" column="IDFIRMY" type="java.lang.Long"></id>
+
+	<property name="osobaFizyczna" column="OSOBAFIZYCZNA" type="java.lang.Boolean"></property>
+
+</class>
+</hibernate-mapping>

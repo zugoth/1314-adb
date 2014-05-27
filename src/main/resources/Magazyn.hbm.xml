@@ -1,0 +1,13 @@
+<!-- 	private Long idMagazynu; -->
+<!-- 	private Long idPunktu; -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+" http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="fajki.model.Magazyn" table="MAGAZYN" lazy="true" dynamic-update="true" select-before-update="true">
+	<id name="idMagazynu" column="IDMAGAZYNU" type="java.lang.Long"></id>
+
+	<property name="idPunktu" column="IDPUNKTU" type="java.util.Long"></property>
+
+</class>
+</hibernate-mapping>

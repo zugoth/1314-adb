@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+" http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="fajki.model.Osoba" table="OSOBA" lazy="true" dynamic-update="true" select-before-update="true">
+	<id name="pesel" column="PESEL" type="java.lang.Integer"></id>
+
+<!-- 	private String imie; -->
+<!-- 	private String nazwisko; -->
+<!-- 	private Integer pesel; -->
+<!-- 	private Long idAdres; -->
+	
+	<property name="imie" column="IMIE" type="java.lang.String"></property>
+	<property name="nazwisko" column="NAZWISKO" type="java.lang.String"></property>
+	<property name="idAdres" column="IDADRES" type="java.util.Long"></property>
+
+
+</class>
+</hibernate-mapping>

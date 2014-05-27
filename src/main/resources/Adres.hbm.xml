@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+" http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="fajki.model.Adres" table="ADRES" lazy="true" dynamic-update="true" select-before-update="true">
+	<id name="idAdres" column="IDADRES" type="java.lang.Long"></id>
+	
+<!-- 	private String ulica; -->
+<!-- 	private Integer nrBudynku; -->
+<!-- 	private Integer nrLokalu; -->
+<!-- 	private String kodPocztowy; -->
+	
+	<property name="ulica" column="ULICA" type="java.lang.String"></property>
+	<property name="kodPocztowy" column="KODPOCZTOWY" type="java.lang.String"></property>
+<!-- 	<property name="price" column="PRICE" type="java.lang.Float" not-null="false"></property> -->
+	<property name="resell" column="RESELL" type="java.lang.String"></property>
+<!-- 	<property name="launchDate" column="LAUNCHDATE" type="java.util.Date"></property> -->
+	<property name="nrBudynku" column="NRBUDYNKU" type="java.lang.Integer"></property>
+	<property name="nrLokalu" column="NRLOCALU" type="java.lang.Integer"></property>
+
+</class>
+</hibernate-mapping>

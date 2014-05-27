@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+" http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="fajki.model.MagazynProdukt" table="MAGAZYNPRODUKT" lazy="true" dynamic-update="true" select-before-update="true">
+
+	<property name="idProduktu" column="IDPRODUKTU" type="java.lang.Long"></property>
+	<property name="idPunktu" column="IDPUNKTU" type="java.lang.Long"></property>
+	<property name="ilosc" column="ILOSC" type="java.lang.Long"></property>
+</class>
+</hibernate-mapping>

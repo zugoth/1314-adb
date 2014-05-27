@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+" http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="fajki.model.Produkt" table="PRODUKT" lazy="true" dynamic-update="true" select-before-update="true">
+	<id name="idProduktu" column="IDPRODUKTU" type="java.lang.Long"></id>
+
+	<property name="nazwa" column="NAZWA" type="java.lang.String"></property>
+	<property name="kodKreskowy" column="KODKRESKOWY" type="java.util.Long"></property>
+	<property name="kategoria" column="KATEGORIA" type="java.util.Long"></property>
+	<property name="idKraju" column="IDKRAJU" type="java.lang.String"></property>
+
+</class>
+</hibernate-mapping>
