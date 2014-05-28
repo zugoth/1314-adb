@@ -10,9 +10,9 @@ import com.rhcloud.zugospoint.model.Punkt;
  * @author zugo
  *
  */
-public class Sklep {
+public class Sklep extends Punkt{
 	private Long idSklepu;
-	private Punkt punkt;
+	//private Punkt punkt;
 	
 	
 	public Long getIdSklepu() {
@@ -21,10 +21,10 @@ public class Sklep {
 	public void setIdSklepu(Long idSklepu) {
 		this.idSklepu = idSklepu;
 	}
-	public Punkt getPunkt() {
-		return punkt;
-	}
-	public void setIdPunktu(Punkt punkt) {
-		this.punktu = punkt;
-	}
+	//public Punkt getPunkt() {
+	//	return punkt;
+	//}
+	//public void setIdPunktu(Punkt punkt) {
+	//	this.punktu = punkt;
+	//}
 }
