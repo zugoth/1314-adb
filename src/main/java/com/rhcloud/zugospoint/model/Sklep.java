@@ -1,4 +1,5 @@
 package com.rhcloud.zugospoint.model;
+import com.rhcloud.zugospoint.model.Punkt;
 /**
  * sklep tez jest magazynem mozna z niego 
  * wycofac produkt do magazynu, 
