@@ -11,7 +11,7 @@ package com.rhcloud.zugospoint.model;
  */
 public class Sklep {
 	private Long idSklepu;
-	private Long idPunktu;
+	private Punkt punkt;
 	
 	
 	public Long getIdSklepu() {
@@ -20,10 +20,10 @@ public class Sklep {
 	public void setIdSklepu(Long idSklepu) {
 		this.idSklepu = idSklepu;
 	}
-	public Long getIdPunktu() {
-		return idPunktu;
+	public Punkt getPunkt() {
+		return punkt;
 	}
-	public void setIdPunktu(Long idPunktu) {
-		this.idPunktu = idPunktu;
+	public void setIdPunktu(Punkt punkt) {
+		this.punktu = punkt;
 	}
 }
