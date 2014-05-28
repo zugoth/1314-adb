@@ -2,10 +2,16 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
 " http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-<class name="fajki.model.Sklep" table="SKLEP" lazy="true" dynamic-update="true" select-before-update="true">
-	<id name="idSklepu" column="IDSKLEPU" type="java.lang.Long"></id>
+<class name="com.rhcloud.zugospoint.model.Sklep" table="SKLEP" lazy="true" dynamic-update="true" select-before-update="true">
+	<id name="idSklepu" type="java.lang.Long">
+		<column name="IDSKLEPU"/>
+		<generator class="identity"/>
+	</id>
 
-	<property name="idPunktu" column="IDPUNKTU" type="java.util.Long"></property>
+	<!--<property name="idPunktu"  type="java.util.Long">
+		<column name="IDPUNKTU" not-null="true" unique="true"/>
+	</property>-->
+	<one-to-one name="idPunktu" class="com.rhcloud.zugospoint.model.Punkt" cascade="save-update"></one-to-one>
 
 </class>
 </hibernate-mapping>
