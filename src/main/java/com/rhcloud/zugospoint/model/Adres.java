@@ -9,6 +9,8 @@ package com.rhcloud.zugospoint.model;
  */
 public class Adres {
 	private Long idAdres;
+	private Long idKraju;
+	private String miasto;
 	private String ulica;
 	private Integer nrBudynku;
 	private Integer nrLokalu;
@@ -20,6 +22,18 @@ public class Adres {
 	}
 	public void setIdAdres(Long idAdres) {
 		this.idAdres = idAdres;
+	}
+	public Long getIdKraju() {
+		return this.idKraju;
+	}
+	public void setIdKraju(Long idKraju) {
+		this.idKraju = idKraju;
+	}
+	public String getMiasto() {
+		return this.miasto;
+	}
+	public void setMiasto(String miasto) {
+		this.miasto = miasto;
 	}
 	public String getUlica() {
 		return ulica;
