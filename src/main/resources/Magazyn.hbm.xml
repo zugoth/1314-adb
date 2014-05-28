@@ -4,10 +4,14 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
 " http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-<class name="fajki.model.Magazyn" table="MAGAZYN" lazy="true" dynamic-update="true" select-before-update="true">
-	<id name="idMagazynu" column="IDMAGAZYNU" type="java.lang.Long"></id>
+<class name="com.rhcloud.zugospoint.model.Magazyn" table="MAGAZYN" lazy="true" dynamic-update="true" select-before-update="true">
+	<id name="idMagazynu"  type="java.lang.Long">
+		<column name="IDMAGAZYNU"></column>
+		<generator class="identity"></generator>
+	</id>
 
-	<property name="idPunktu" column="IDPUNKTU" type="java.util.Long"></property>
+	<!--<property name="idPunktu" column="IDPUNKTU" type="java.util.Long"></property>-->
+	<one-to-one neme="punkt" class="com.rhcloud.zugospoint.model.Punkt" cascade="save-update"></one-to-one>
 
 </class>
 </hibernate-mapping>
